@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ss_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/num"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/room_num"
+        android:src="@drawable/num" />
+
+    <TextView
+        android:id="@+id/room_num"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/num"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ss_image" />
+
+    <ImageView
+        android:id="@+id/all_image"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/all_num"
+        android:src="@drawable/all" />
+
+    <TextView
+        android:id="@+id/all_num"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/num"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/room_num" />
+
+    <ImageView
+        android:id="@+id/rest_image"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/all_image"
+        android:src="@drawable/rest" />
+
+    <TextView
+        android:id="@+id/rest_num"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/rest_image"
+        android:layout_below="@+id/num"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

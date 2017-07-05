@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_x1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diaopingbackground">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="384dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_button" />
+
+            <Button
+                android:id="@+id/refresh"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/refresh_button" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/creator" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aa"
+        android:layout_width="384dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="192dp"
+            android:layout_height="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+
+            <ImageView
+                android:id="@+id/rest"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/redrest" />
+            <TextView
+                android:id="@+id/restnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rest"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:id="@+id/speed"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/speed" />
+            <TextView
+                android:id="@+id/speednum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/speed"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="192dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/location" />
+
+            <ImageView
+                android:id="@+id/lou"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/location"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/lou" />
+
+            <TextView
+                android:id="@+id/lounum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lou"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="38dp" />
+
+            <ImageView
+                android:id="@+id/room"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/location"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/room" />
+            <TextView
+                android:id="@+id/roomnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/room"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="68dp"  />
+            <ImageView
+                android:id="@+id/bed"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/location"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/bednum" />
+            <TextView
+                android:id="@+id/bednum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bed"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="98dp"  />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
