@@ -7,4 +7,5 @@ package dc.example.xx.doctor;
 public class aa {
   int i;
   int c;
+    int a;
 }
